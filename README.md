@@ -9,6 +9,9 @@ This repository contains examples aimed at demonstrating all kinds of random, us
 ## Kafka Clients
 * [Consumer offset resetting](/consumer-offset-resetting/)
 
+## Schema Registry
+* [Avro Schema Referencing](/avro-schema-referencing/)
+
 ## Misc
 * [Custom simple Postgres](/custom-simple-postgres/)
 

@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "name": "Jelly",
+    "namespace": "com.github.zacharydhamilton.events",
+    "version": "1",
+    "fields": [
+        {
+            "name": "flavor",
+            "type": "string",
+            "doc": "The flavor of this Jelly (i.e. grape, strawberry, raspberry)."
+        },
+        {
+            "name": "organic",
+            "type": "boolean",
+            "doc": "Is this organic or not."
+        }
+    ]
+}

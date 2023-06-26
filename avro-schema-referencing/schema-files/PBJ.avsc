@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "PBJ",
+    "namespace": "com.github.zacharydhamilton.events",
+    "version": "1",
+    "fields": [
+        {
+            "name": "bread",
+            "type": "string",
+            "doc": "Type of bread."
+        },
+        {
+            "name": "peanutbutter",
+            "type": "com.github.zacharydhamilton.events.PeanutButter",
+            "doc": "The specific PeanutButter."
+        },
+        {
+            "name": "jelly",
+            "type": "com.github.zacharydhamilton.events.Jelly",
+            "doc": "The specific Jelly."
+        }
+    ]
+}

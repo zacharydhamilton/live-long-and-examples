@@ -2,3 +2,6 @@
 **/env.sh
 **/terraform.tfstate*
 **/.terraform*
+
+# Cient Properties files
+**/client.properties

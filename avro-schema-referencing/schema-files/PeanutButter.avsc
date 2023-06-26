@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "name": "PeanutButter",
+    "namespace": "com.github.zacharydhamilton.events",
+    "version": "1",
+    "fields": [
+        {
+            "name": "smooth",
+            "type": "boolean",
+            "doc": "Is this smooth or not. Not implies chunky"
+        },
+        {
+            "name": "organic",
+            "type": "boolean",
+            "doc": "Is this organic or not."
+        }
+    ]
+}
