@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="images/live-long-and-prosper.gif" width=100% height=100%>
+    <img src="images/live-long-and-prosper.gif" width=75% height=75%>
 </div>
 
 # <div align="center">Beginner, intermediate, and advanced examples</div>
