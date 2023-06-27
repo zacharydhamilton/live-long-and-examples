@@ -15,4 +15,5 @@ This repository contains examples aimed at demonstrating all kinds of random, us
 
 ## Misc
 * [Custom simple Postgres](/custom-simple-postgres/)
+* [Terraform CC UI Proxy](/terraform-cc-ui-proxy/)
 
