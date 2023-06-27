@@ -11,6 +11,7 @@ This repository contains examples aimed at demonstrating all kinds of random, us
 
 ## Schema Registry
 * [Avro Schema Referencing](/avro-schema-referencing/)
+* [Custom SubjectNameStrategy](/custom-subject-name-strategy/)
 
 ## Misc
 * [Custom simple Postgres](/custom-simple-postgres/)

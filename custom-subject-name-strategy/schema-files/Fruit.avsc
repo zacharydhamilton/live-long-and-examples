@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "Fruit",
+    "namespace": "com.github.zacharydhamilton.events",
+    "version": "1",
+    "fields": [
+        {
+            "name": "kind",
+            "type": "string",
+            "doc": "Kind of fruit"
+        },
+        {
+            "name": "color",
+            "type": "string",
+            "doc": "Color of the fruit"
+        },
+        {
+            "name": "organic",
+            "type": "boolean",
+            "doc": "Whether or not the fruit is organic"
+        }
+    ]
+}
