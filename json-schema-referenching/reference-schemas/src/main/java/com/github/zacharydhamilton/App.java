@@ -12,7 +12,7 @@ import com.github.zacharydhamilton.producer.PBJProducer;
  *
  */
 public class App {
-    public static void main( String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         PeanutButter pb = new PeanutButter();
 		pb.setSmooth(true);
 		pb.setOrganic(true);

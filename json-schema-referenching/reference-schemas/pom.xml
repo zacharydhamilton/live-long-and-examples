@@ -75,7 +75,10 @@
           <sourceDirectory>${basedir}/../schema-files/</sourceDirectory>
           <targetPackage>com.github.zacharydhamilton.objects</targetPackage>
           <outputDirectory>src/main/java/</outputDirectory>
-          <excludes>*.md</excludes>
+          <excludes>
+            <exclude>PeanutButter.json</exclude>
+            <exclude>Jelly.json</exclude>
+          </excludes>
         </configuration>
         <executions>
           <execution>

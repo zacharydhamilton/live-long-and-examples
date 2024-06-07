@@ -27,7 +27,7 @@ public class PBJProducer {
         addPropsFromFile(props, "client.properties");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaJsonSchemaSerializer.class.getName());
-        props.put(KafkaJsonSchemaDeserializerConfig.AUTO_REGISTER_SCHEMAS, false);
+        props.put(KafkaJsonSchemaDeserializerConfig.AUTO_REGISTER_SCHEMAS, true);
         props.put(KafkaJsonSchemaDeserializerConfig.VALUE_SUBJECT_NAME_STRATEGY, TopicNameStrategy.class.getName());
         props.put(ProducerConfig.CLIENT_ID_CONFIG, "json-reference-schema-producer");
         props.put(ProducerConfig.ACKS_CONFIG, "all");

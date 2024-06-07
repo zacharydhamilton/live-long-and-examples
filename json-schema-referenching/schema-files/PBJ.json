@@ -10,11 +10,11 @@
             "description": "Type of bread."
         },
         "peanutbutter": {
-            "$ref": "PeanutButter.json",
+            "$ref": "https://raw.githubusercontent.com/zacharydhamilton/live-long-and-examples/main/json-schema-referenching/schema-files/PeanutButter.json",
             "description": "The specific PeanutButter."
         },
         "jelly": {
-            "$ref": "Jelly.json",
+            "$ref": "https://raw.githubusercontent.com/zacharydhamilton/live-long-and-examples/main/json-schema-referenching/schema-files/Jelly.json",
             "description": "The specific Jelly."
         }
     },

@@ -200,57 +200,6 @@ resource "confluent_kafka_topic" "sandwhiches" {
         id = confluent_kafka_cluster.main.id
     }
 }
-# SCHEMAS
-# --------------------
-resource "confluent_schema" "peanutbutter" {
-    subject_name = "com.github.zacharydhamilton.events.PeanutButter"
-    format = "JSON"
-    schema = file("../schema-files/PeanutButter.json")
-    rest_endpoint = confluent_schema_registry_cluster.main.rest_endpoint
-    credentials {
-        key = confluent_api_key.app_manager_sr.id
-        secret = confluent_api_key.app_manager_sr.secret
-    }
-    schema_registry_cluster {
-        id = confluent_schema_registry_cluster.main.id
-    }
-}
-resource "confluent_schema" "jelly" {
-    subject_name = "com.github.zacharydhamilton.events.Jelly"
-    format = "JSON"
-    schema = file("../schema-files/Jelly.json")
-    rest_endpoint = confluent_schema_registry_cluster.main.rest_endpoint
-    credentials {
-        key = confluent_api_key.app_manager_sr.id
-        secret = confluent_api_key.app_manager_sr.secret
-    }
-    schema_registry_cluster {
-        id = confluent_schema_registry_cluster.main.id
-    }
-}
-resource "confluent_schema" "pbj" {
-    subject_name = "pbj-sandwhiches-value"
-    format = "JSON"
-    schema = file("../schema-files/PBJ.json")
-    rest_endpoint = confluent_schema_registry_cluster.main.rest_endpoint
-    schema_reference {
-        name = "com.github.zacharydhamilton.events.PeanutButter"
-        subject_name = "com.github.zacharydhamilton.events.PeanutButter"
-        version = confluent_schema.peanutbutter.version
-    }
-    schema_reference {
-        name = "com.github.zacharydhamilton.events.Jelly"
-        subject_name = "com.github.zacharydhamilton.events.Jelly"
-        version = confluent_schema.jelly.version
-    }
-    credentials {
-        key = confluent_api_key.app_manager_sr.id
-        secret = confluent_api_key.app_manager_sr.secret
-    }
-    schema_registry_cluster {
-        id = confluent_schema_registry_cluster.main.id
-    }
-}
 # CLIENT PROPERTIES FILE
 # --------------------
 resource "local_file" "client_properties" {
