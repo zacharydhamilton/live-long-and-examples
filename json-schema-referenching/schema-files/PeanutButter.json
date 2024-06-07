@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "PeanutButter",
+    "description": "com.github.zacharydhamilton.events",
+    "type": "object",
+    "version": "1",
+    "properties": {
+        "smooth": {
+            "type": "boolean",
+            "description": "Is this smooth or not. Not implies chunky"
+        },
+        "organic": {
+            "type": "boolean",
+            "description": "Is this organic or not."
+        }
+    },
+    "required": ["smooth", "organic"]
+}

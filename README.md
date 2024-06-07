@@ -8,6 +8,7 @@ This repository contains examples aimed at demonstrating all kinds of random, us
 
 ## Kafka Clients
 * [Consumer offset resetting](/consumer-offset-resetting/)
+* [WIP: Client Autoscaling with Keda](https://keda.sh/docs/2.10/scalers/apache-kafka/)
 
 ## Schema Registry
 * [Avro Schema Referencing](/avro-schema-referencing/)

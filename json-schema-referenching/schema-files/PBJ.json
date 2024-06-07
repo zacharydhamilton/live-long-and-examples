@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "PBJ",
+    "description": "com.github.zacharydhamilton.events",
+    "type": "object",
+    "version": "1",
+    "properties": {
+        "bread": {
+            "type": "string",
+            "description": "Type of bread."
+        },
+        "peanutbutter": {
+            "$ref": "PeanutButter.json",
+            "description": "The specific PeanutButter."
+        },
+        "jelly": {
+            "$ref": "Jelly.json",
+            "description": "The specific Jelly."
+        }
+    },
+    "required": ["bread", "peanutbutter", "jelly"]
+}

@@ -5,3 +5,9 @@
 
 # Cient Properties files
 **/client.properties
+
+# VS Code
+.vscode/
+
+# WIP examples
+cc-billing-viz/
